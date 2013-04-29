@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'apt', '1.7.0'
+cookbook 'database'
+cookbook 'mysql'
+cookbook 'ispconfig', :path => 'ispconfig'
+cookbook "chef-hostname", git: "git://github.com/franco/chef-hostname.git"
+cookbook "fail2ban", git: "git://github.com/opscode-cookbooks/fail2ban.git"
